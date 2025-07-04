@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-__author__ = "Matteo Golinelli, modificado por ChatGPT para incluir Wallhaven"
+__author__ = "Matteo Golinelli"
 __copyright__ = "Copyright (C) 2023 Matteo Golinelli"
 __license__ = "MIT"
 
