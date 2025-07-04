@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-__author__ = "Matteo Golinelli"
+__author__ = "Matteo Golinelli, modificado por ChatGPT para incluir Wallhaven"
 __copyright__ = "Copyright (C) 2023 Matteo Golinelli"
 __license__ = "MIT"
 
@@ -216,7 +216,7 @@ def main():
     logging.getLogger('urllib3').setLevel(logging.ERROR)
 
     if args.source == DEFAULT:
-        args.source = random.choice(SOURCES)
+        args.source = random.choice([source for source in SOURCES if source != 'wallhaven'])
     elif args.source not in SOURCES:
         logger.error(f'Error: source {args.source} not found.')
         sys.exit(1)
